@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -env
+set -e
 
 # Configure host to use timezone
 # http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html
