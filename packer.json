@@ -44,7 +44,10 @@
             "environment_vars": [
                 "TIMEZONE={{user `timezone`}}"
             ]
-
+        },
+        {
+            "type": "shell",
+            "script": "scripts/cloudinit.sh"
         },
         {
             "type": "shell",
@@ -52,6 +55,10 @@
                 "sudo yum -y -x docker\\* -x ecs\\* update",
                 "sudo yum -y install aws-cfn-bootstrap awslogs jq"
             ]
+        },
+        {
+            "type": "shell",
+            "script": "scripts/cleanup.sh"
         }
     ],
     "post-processors": [
