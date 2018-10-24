@@ -18,10 +18,10 @@
           "associate_public_ip_address": "true",
           "ami_name": "docker-in-aws-ecs {{timestamp}}",
           "tags": {
-            "Name": "Docker in AWS ECS Base Image 2017.09.h",
+            "Name": "Docker in AWS ECS Base Image 2018.03.a",
             "SourceAMI": "{{ .SourceAMI }}",
-            "DockerVersion": "17.09.1-ce",
-            "ECSAgentVersion": "1.17.0-2"
+            "DockerVersion": "17.12.1-ce",
+            "ECSAgentVersion": "1.18.0"
           }
         }
       ],

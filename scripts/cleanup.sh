@@ -5,4 +5,3 @@ sudo docker system prune -f -a
 sudo service docker stop
 sudo chkconfig docker off
 sudo rm -rf /var/log/docker /var/log/ecs/*
-
